@@ -9,7 +9,7 @@ This has the flexibility to have your own task specific architecture and custom 
 
 ### Dynamics assumed:
 Main point of divergence is in the dynamics:
-The hidden voltage or state variable has all the dynamics, and the observed "rate" is just a point non-linearity:
+The hidden voltage or state variable has all the dynamics, and the observed "rate" is just via a point non-linearity:
 ```
 dx/dt = - x  + W_in * X_in   + W_rec * r
 r = ReLU(x). [or tanh(x)]
